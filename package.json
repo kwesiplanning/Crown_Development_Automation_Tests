@@ -1,0 +1,18 @@
+{
+  "name": "crown-developments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "cypress": "^13.16.1",
+    "dotenv": "^17.2.1",
+    "puppeteer": "^24.3.0",
+    "puppeteer-core": "^24.3.0"
+  }
+}
