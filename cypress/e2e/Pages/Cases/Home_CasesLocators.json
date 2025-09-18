@@ -1,0 +1,19 @@
+{
+    "locators": {
+        "pageTitle": ".govuk-heading-xl",
+        "searchCaseLbl": "#search-label",
+        "searchHintText": "#search-hint",
+        "searchCaseInput": "#search-input",
+        "searchBtn": "#search-button",
+        "createACaseLbl": ".govuk-grid-column-one-third > .govuk-form-group > .govuk-label-wrapper > .govuk-label",
+        "createACaseLink": "#create-case-link",
+
+        "columnHeadingReference": "[aria-sort='descending'] > button",
+        "columnHeadingSiteLocation":":nth-child(2) > button",
+        "columnHeadingLocalPlanningAuth": ".govuk-table__row > :nth-child(3) > button",
+        "columnHeadingApplicationType": ":nth-child(4) > button",
+        "columnHeadingStatus": ":nth-child(5) > button"
+
+    }
+
+}

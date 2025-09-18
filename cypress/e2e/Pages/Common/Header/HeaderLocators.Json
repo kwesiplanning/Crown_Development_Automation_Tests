@@ -1,0 +1,11 @@
+{
+    "locators":{
+        "headerLogo":".pins-header__logo-crown",
+        "planningInspectorateLbl":"span",
+        "planningInspectorateTitle":".pins-header-service-name",
+        "allCasesLink":":nth-child(1) > .govuk-header__link",
+        "signOutLink":".govuk-header__navigation-list > :nth-child(2)"
+    }
+
+
+}

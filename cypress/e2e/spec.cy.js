@@ -4,29 +4,24 @@
 import { projectInformation } from '../support/utils/createProjectInformation';
 import { users } from '../fixtures/users';
 import { urlPaths } from '../support/urlPaths.js';
+import { Home_CasesPageActions } from './Pages/Cases/Home_CasesPageActions.js';
+import { WhatTypeOfApplicationPageActions } from './Pages/WhatTypeOfApplicattion/WhatTypeOfApplicationPageActions.js'; 
 
-const { applications: applicationsUsers } = users;
-
+const home_CasesPageActions = new Home_CasesPageActions();
+const whatTypeOfApplicationPageActions = new WhatTypeOfApplicationPageActions();
 
 describe('template spec', () => {
   let projectInfo;
   
   beforeEach('', ()=>{
-    // projectInfo = x();
-    // Crown development doesnt need the applicationusers
 		cy.login(users.applications.caseAdmin);
-		// createCasePage.createCase(projectInfo);
   })
 
   it('Navigate to Cases', () => {
-    console.log('oppned crown dev')
-    // cy.visit(urlPaths.appealsList);
-
-    // cy.on('uncaught:exception', (e) => {
-    //     return false
-    // })
-
-    cy.visit('/cases')  
-
+    console.log('opened crown dev')
+    cy.visit('/cases') 
+    home_CasesPageActions.VerifyPageElements();
+    home_CasesPageActions.CreateANewCase();
+    whatTypeOfApplicationPageActions.VerifyPageElements();
   })
 })

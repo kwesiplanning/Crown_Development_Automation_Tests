@@ -1,0 +1,7 @@
+{
+    "locators":{
+        "backLink": ".govuk-back-link",
+        "continueButton": "[data-cy='button-save-and-continue']"
+    }
+
+}
